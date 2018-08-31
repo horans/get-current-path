@@ -14,8 +14,7 @@ function gcp () {
   } else {
     var ss = document.getElementsByTagName('script')
     cs = ss[ss.length - 1]
-    if (cs.getAttribute.length !== undefined) return cs.src
-    cl = cs.getAttribute('src', -1)
+    cl = cs.getAttribute.length !== undefined ? cs.src : cs.getAttribute('src', -1)
   }
   return cl.substring(0, cl.lastIndexOf('/') + 1)
 }
