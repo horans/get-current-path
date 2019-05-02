@@ -11,6 +11,9 @@ will acquire the path of currently executing js file.
 
 ## Usage
 
+Use "GCP" as soon as possible, and avoid to use directly in any delays.
+(setTimeout, Promise, Event)
+
 ```javascript
 var currentPath = gcp()
 ```
@@ -31,13 +34,17 @@ var currentPath = gcp('your-script.js')
 
 1. [How to get the file-path of the currently executing javascript code](https://stackoverflow.com/questions/2255689/)
 1. [What is my script src URL](https://stackoverflow.com/questions/984510/)
+1. [document.currentScript is null](https://stackoverflow.com/questions/38769103/)
+1. [Document​.current​Script](https://developer.mozilla.org/en-US/docs/Web/API/Document/currentScript)
 
 ## Change Log
 
-__180903__
-
+```text
+180903
 * fallback with filename
+```
 
-__180831__
-
+```text
+180831
 * initial release
+```
